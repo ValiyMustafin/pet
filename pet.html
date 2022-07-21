@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.header {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.dropbtn {
+    background-color: #f6f6f6;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    width: 100%;
+}
+
+.dropbtn:hover {
+    background-color: #ddd;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 80vw;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    text-align: left;
+    padding-left: 36px;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body bgcolor="#f0f1f1">
+
+
+<div class="header">
+<div class="dropdown">
+<button onclick="myFunction('myDropdown1')" class="dropbtn">1. Заполнение Личного Кабинета и Синхронизация номенклатуры</button>
+  <div id="myDropdown1" class="dropdown-content">
+    <a href="https://soykasoft.ru/base1/course1" style="color:#000; text-decoration:none">Заполнение Личного кабинета WB-Ozon</a>
+    <a href="https://soykasoft.ru/base1/course2" style="color:#000; text-decoration:none">Синхронизация номенклатуры</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction('myDropdown2')" class="dropbtn">2. Ввод начальных остатков</button>
+  <div id="myDropdown2" class="dropdown-content">
+    <a href="https://soykasoft.ru/base2/course1" style="color:#000; text-decoration:none">Шаг 1. Заполнение даты Ввода начальных остатков</a>
+    <a href="https://soykasoft.ru/base2/course2" style="color:#000; text-decoration:none">Шаг 2. Заполнение остатков по деньгам</a>
+    <a href="https://soykasoft.ru/base2/course3" style="color:#000; text-decoration:none">Шаг 3. Заполнение остатков по товарам</a>
+    <a href="https://soykasoft.ru/base2/course4" style="color:#000; text-decoration:none">Шаг 4. Заполнение остаток по взаиморасчетам</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction('myDropdown3')" class="dropbtn">3. Товарный учет</button>
+  <div id="myDropdown3" class="dropdown-content">
+    <a href="https://soykasoft.ru/base3/course1" style="color:#000; text-decoration:none">В разработке</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction('myDropdown4')" class="dropbtn">4. Производство</button>
+  <div id="myDropdown4" class="dropdown-content">
+    <a href="https://soykasoft.ru/base4/course1" style="color:#000; text-decoration:none">Настройка и Спецификации</a>
+    <a href="https://soykasoft.ru/base4/course2" style="color:#000; text-decoration:none">Движение сырья и запасов</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction('myDropdown5')" class="dropbtn">5. Учет денег</button>
+  <div id="myDropdown5" class="dropdown-content">
+    <a href="https://soykasoft.ru/base5/course1" style="color:#000; text-decoration:none">Внутреннее перемещение денег</a>
+    <a href="https://soykasoft.ru/base5/course2" style="color:#000; text-decoration:none">Операция на расходы</a>
+    <a href="https://soykasoft.ru/base5/course3" style="color:#000; text-decoration:none">Добавление строк План счетов и статьи Движения денежных средств</a>
+    <a href="https://soykasoft.ru/base5/course4" style="color:#000; text-decoration:none">Начисление и выплата Заработанной платы</a>
+    <a href="https://soykasoft.ru/base5/course5" style="color:#000; text-decoration:none">Расчеты с поставщиками</a>
+    <a href="https://soykasoft.ru/base5/course6" style="color:#000; text-decoration:none">Начисление и оплата налога УСН</a>
+    <a href="https://soykasoft.ru/base5/course7" style="color:#000; text-decoration:none">Расчеты с учредителем</a>
+    <a href="https://soykasoft.ru/base5/course8" style="color:#000; text-decoration:none">Расчеты по кредитам и займам</a>
+    <a href="https://soykasoft.ru/base5/course9" style="color:#000; text-decoration:none">Расчеты с подотчетниками</a>
+    <a href="https://soykasoft.ru/base5/course10" style="color:#000; text-decoration:none">Возврат денег от Поставщика</a>
+    <a href="https://soykasoft.ru/base5/course11" style="color:#000; text-decoration:none">Поступления от покупателей</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction('myDropdown6')" class="dropbtn">6. Синхронизация ВБ Озон</button>
+  <div id="myDropdown6" class="dropdown-content">
+    <a href="https://soykasoft.ru/base6/course1" style="color:#000; text-decoration:none">В разработке</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction('myDropdown7')" class="dropbtn">7. Самовыкупы</button>
+  <div id="myDropdown7" class="dropdown-content">
+    <a href="https://soykasoft.ru/base7/course1" style="color:#000; text-decoration:none">Заполнение документа выкупа</a>
+    <a href="https://soykasoft.ru/base7/course2" style="color:#000; text-decoration:none">Оплата услуг выкупщика</a>
+    <a href="https://soykasoft.ru/base7/course3" style="color:#000; text-decoration:none">Влияние выкупов на отчеты</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction('myDropdown8')" class="dropbtn" style="margin: auto">8. Закрытие месяца</button>
+  <div id="myDropdown8" class="dropdown-content" style="height: auto; width: 1px; padding-left: 0px;">
+
+    <div class="dropdown">
+      <button onclick="myFunction('myDropdown81')" class="dropbtn" style="padding-left: 36px;">1. Общий шаг</button>
+        <div id="myDropdown81" class="dropdown-content">
+          <a href="https://soykasoft.ru/base8/course1" style="color:#000; text-decoration:none">1. Отсутствуют непроведенные документы</a>
+          <a href="https://soykasoft.ru/base8/course2" style="color:#000; text-decoration:none">2. Удалите документы с пометкой на удаление</a>
+          <a href="https://soykasoft.ru/base8/course3" style="color:#000; text-decoration:none">3. Перепроведите все документы за месяц</a>
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button onclick="myFunction('myDropdown82')" class="dropbtn" style="padding-left: 36px;">2. Проверка операций по деньгам</button>
+          <div id="myDropdown82" class="dropdown-content">
+            <a href="https://soykasoft.ru/base8/course4" style="color:#000; text-decoration:none">1. Операции по движению денег и остатки на конец месяца</a>
+            <a href="https://soykasoft.ru/base8/course5" style="color:#000; text-decoration:none">2. По операциям указаны структурное подразделение и направление деятельности</a>
+            <a href="https://soykasoft.ru/base8/course6" style="color:#000; text-decoration:none">3. Отстутсвует статья расходов "Управленческие расходы"</a>
+            <a href="https://soykasoft.ru/base8/course7" style="color:#000; text-decoration:none">4. По Статье "Внутреннее перемещение" Приход равен Расходу</a>
+            <a href="https://soykasoft.ru/base8/course8" style="color:#000; text-decoration:none">5. По расходным статьям нет Поступления, по доходным статьям нет Расхода</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button onclick="myFunction('myDropdown83')" class="dropbtn" style="padding-left: 36px;">3. Проверка Синхронизаций с Маркетплейсом</button>
+            <div id="myDropdown83" class="dropdown-content">
+              <a href="https://soykasoft.ru/base8/course9" style="color:#000; text-decoration:none">1. Загружены отчеты по продажам</a>
+              <a href="https://soykasoft.ru/base8/course10" style="color:#000; text-decoration:none">2. Загружен принятый товар со стороны Маркетплейса</a>
+              <a href="https://soykasoft.ru/base8/course11" style="color:#000; text-decoration:none">3. В отчеты по Реализациям ВБ занесены расходы на Хранение и  Прочие расходы</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button onclick="myFunction('myDropdown84')" class="dropbtn" style="padding-left: 36px;">4. Проверка Товарного учета</button>
+              <div id="myDropdown84" class="dropdown-content">
+                <a href="https://soykasoft.ru/base8/course12" style="color:#000; text-decoration:none">1. Занесены все поступления от Поставщика (приходные накладные)</a>
+                <a href="https://soykasoft.ru/base8/course13" style="color:#000; text-decoration:none">2. Отражено перемещения товара с "Основного склада" на Склад "Товары в пути"</a>
+                <a href="https://soykasoft.ru/base8/course14" style="color:#000; text-decoration:none">3. Занесены все документы Самовыкупа</a>
+                <a href="https://soykasoft.ru/base8/course15" style="color:#000; text-decoration:none">4. Отсутствуют отрицательные остатки на складах по номенклатурам</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button onclick="myFunction('myDropdown85')" class="dropbtn" style="padding-left: 36px;">5. Проверка начислений</button>
+                <div id="myDropdown85" class="dropdown-content">
+                  <a href="https://soykasoft.ru/base8/course16" style="color:#000; text-decoration:none">1. Отражено начисление зарплаты за месяц</a>
+                  <a href="https://soykasoft.ru/base8/course17" style="color:#000; text-decoration:none">2. Отражено начисление налога УСН</a>
+                  <a href="https://soykasoft.ru/base8/course18" style="color:#000; text-decoration:none">3. Начислены дивиденды собственникам, если была выплата дивидендов</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <form action="https://soykasoft.ru/base8/course19" target="_blank">
+                  <button class="dropbtn" style="padding-left: 36px;">6. Проверка взаиморасчетов с поставщиками</button>
+                 </form>
+              </div>
+
+                <div class="dropdown">
+                  <button onclick="myFunction('myDropdown87')" class="dropbtn" style="padding-left: 36px;">7. Непосредственное закрытие</button>
+                    <div id="myDropdown87" class="dropdown-content">
+                      <a href="https://soykasoft.ru/base8/course20" style="color:#000; text-decoration:none">1. Закройте период</a>
+                      <a href="https://soykasoft.ru/base8/course21" style="color:#000; text-decoration:none">2. Проверка баланса</a>
+                      <a href="https://soykasoft.ru/base8/course22" style="color:#000; text-decoration:none">3. Поставьте дату запрета редактирования</a>
+                    </div>
+                  </div>
+                  
+                  <div class="dropdown">
+                    <form action="https://soykasoft.ru/base8/course24" target="_blank">
+                      <button class="dropbtn" style="padding-left: 36px;">Выравнивание баланса</button>
+                     </form>
+                  </div>
+
+  </div>
+</div>
+
+<div class="dropdown">
+  <form action="https://soykasoft.ru/bankinteg" target="_blank">
+    <button class="dropbtn">Инструкции для интеграции банков в 1С</button>
+   </form>
+</div>
+
+<div class="dropdown">
+  <form action="https://soykasoft.ru/instruction" target="_blank">
+    <button class="dropbtn">Инструкция по установке 1С:УНФ SoykaSoft</button>
+   </form>
+</div>
+
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction(a) {
+    document.getElementById(a).classList.toggle("show");
+}
+
+
+</script>
+
+</body>
+</html>
